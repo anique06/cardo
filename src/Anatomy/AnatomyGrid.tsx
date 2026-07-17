@@ -1,6 +1,5 @@
 import { ArrowRight, HeartPulse } from "lucide-react";
-import AnatomyButton from "./AnatomyButton";
-import AnatomyDescription from "./AnatomyDescription";
+
 import { MapPin } from "lucide-react";
 
 function AnatomyGrid() {

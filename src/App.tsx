@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Header from "./Header/Header";
-import Introduction from "./Introduction/Introduction";
 import HeartCanvas from "./HeartCanvas";
 import AnatomyGrid from "./Anatomy/AnatomyGrid";
 import PhysiologyGrid from "./Physiology/PhysiologyGrid";
