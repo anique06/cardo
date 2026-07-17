@@ -8,11 +8,10 @@ Title: Realistic Human Heart
 */
 
 import * as THREE from "three";
-import React from "react";
+
 import { useGLTF } from "@react-three/drei";
 import type { GLTF } from "three-stdlib";
 import type { ThreeElements } from "@react-three/fiber";
-
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -25,7 +24,7 @@ type GLTFResult = GLTF & {
 
 export function Model(props: ThreeElements["group"]) {
   const { nodes, materials } = useGLTF(
-    "/realistic_human_heart.glb"
+    "/realistic_human_heart.glb",
   ) as unknown as GLTFResult;
   return (
     <group {...props} dispose={null}>
