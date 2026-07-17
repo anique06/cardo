@@ -1,0 +1,123 @@
+/* App.css */
+
+:root {
+  --cream: #F7FBF0;
+  --ink: #16241C;
+  --sage: #7FA37A;
+  --mint-glow: #D9EFD3;
+  --pulse-coral: #E8735A;
+
+  --font-display: "Inria Serif", serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Soft grain so the flat cream doesn't look like a plain CSS fill */
+.app-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Ambient vascular blobs — the signature element */
+.bg-blobs {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 45% 55% 60% 40% / 50% 45% 55% 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+  animation: drift 22s ease-in-out infinite alternate;
+}
+
+.blob-a {
+  width: 520px; height: 420px;
+  top: -120px; left: -80px;
+  background: var(--sage);
+}
+
+.blob-b {
+  width: 460px; height: 460px;
+  top: 30%; right: -140px;
+  background: var(--mint-glow);
+  animation-delay: -6s;
+}
+
+.blob-c {
+  width: 320px; height: 320px;
+  bottom: -100px; left: 30%;
+  background: var(--pulse-coral);
+  opacity: 0.12;
+  animation-delay: -12s;
+}
+
+@keyframes drift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(30px, -20px) scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob { animation: none; }
+}
+
+/* Content sits above the background layer */
+main, .site-footer, nav {
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  font-family: var(--font-display);
+}
+
+.section--hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.intro-heart {
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  background: radial-gradient(circle at 50% 40%, rgba(232,115,90,0.18), transparent 70%);
+}
+
+@media (max-width: 768px) {
+  .section--hero { grid-template-columns: 1fr; }
+}
+
+.site-footer {
+  background: var(--ink);
+  color: var(--mint-glow);
+  padding: 3rem 2rem;
+  text-align: center;
+  font-family: var(--font-body);
+}

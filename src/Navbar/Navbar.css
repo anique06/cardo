@@ -1,0 +1,8 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(14px);
+  background: rgba(247, 251, 240, 0.7);
+  border-bottom: 1px solid rgba(22, 36, 28, 0.08);
+}
