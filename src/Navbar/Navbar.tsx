@@ -97,7 +97,7 @@ function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img
-              src="/src/assets/cardo-logo.png"
+              src="/cardo-logo.png"
               alt="Cardo Logo"
               className="h-10 w-auto"
             />
