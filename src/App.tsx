@@ -7,6 +7,7 @@ import PhysiologyGrid from "./Physiology/PhysiologyGrid";
 import GameGrid from "./Game/GameGrid";
 import CaseGrid from "./Case/CaseGrid";
 import Footer from "./Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 function App(): React.JSX.Element {
   return (
@@ -79,6 +80,7 @@ function App(): React.JSX.Element {
           <Footer />
         </div>
       </section>
+      <Analytics />
     </div>
   );
 }
