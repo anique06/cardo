@@ -7,7 +7,7 @@ import PhysiologyGrid from "./Physiology/PhysiologyGrid";
 import GameGrid from "./Game/GameGrid";
 import CaseGrid from "./Case/CaseGrid";
 import Footer from "./Footer";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 function App(): React.JSX.Element {
   return (
