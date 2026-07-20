@@ -1,6 +1,7 @@
 import { ArrowRight, HeartPulse } from "lucide-react";
 
 import { MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function AnatomyGrid() {
   return (
@@ -43,8 +44,8 @@ function AnatomyGrid() {
                 structures.
               </p>
 
-              <a
-                href="#heart-structure"
+              <Link
+                to="/Anatomy/AnatomyHeartStructure"
                 className="
                 absolute right-10 bottom-0 
                 p-5
@@ -61,7 +62,7 @@ function AnatomyGrid() {
               >
                 Explore Anatomy
                 <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

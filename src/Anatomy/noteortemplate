@@ -1,0 +1,233 @@
+
+        {/* Section: Internal Anatomy */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-20">
+          <div className="lg:col-span-7">
+            <p className="text-xs font-bold tracking-[0.2em] text-[#A71627] uppercase mb-2">
+              Internal Organization
+            </p>
+            <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight mb-6">
+              Internal Anatomy & Flow Pathways
+            </h2>
+            <div className="space-y-6 text-sm text-[#1F365C]/80 leading-loose">
+              <p>
+                Sectioning through the myocardium exposes an intricate internal
+                world. The thin-walled right atrium displays a smooth posterior
+                wall (sinus venarum) contrasting sharply with its rigid,
+                anterior wall section texturized by the{" "}
+                <strong>pectinate muscles</strong>. These domains converge
+                cleanly along an internal structural line known as the{" "}
+                <em>crista terminalis</em>.
+              </p>
+              <p>
+                Transitioning into the thick-walled ventricles reveals a network
+                of dense muscular bands called{" "}
+                <strong>trabeculae carneae</strong>. Certain specialized
+                muscular projections, the <strong>papillary muscles</strong>,
+                rise from the ventricular floors to attach securely to the free
+                borders of the AV valve leaflets via fibrous cordae tendineae,
+                working continuously to prevent retrograde leaflet eversion
+                during peak systolic pressures.
+              </p>
+              <div className="p-5 rounded-2xl bg-[#A71627]/5 border border-[#A71627]/10 text-xs text-[#1F365C]/90 leading-relaxed">
+                <strong>Embryological Correlation:</strong> The interatrial
+                septum bears a shallow focal depression, the{" "}
+                <em>fossa ovalis</em>. This marks the postnatal fusion site of
+                the fetal foramen ovale, which shunted placental blood past the
+                non-functional embryonic lungs.
+              </div>
+            </div>
+          </div>
+          <div className="lg:col-span-5 rounded-3xl backdrop-blur-xl border border-white/40 bg-white/30 shadow-xl overflow-hidden aspect-[4/3] group transition-all hover:-translate-y-1 duration-3xl">
+            <img
+              src="/InternalHeart.png"
+              alt="Internal coronal section of the human heart showing chambers, ventricular valves, and interatrial septum"
+              className="w-full h-full object-cover grayscale opacity-90 mix-blend-multiply group-hover:scale-105 transition-transform duration-700"
+            />
+          </div>
+        </section>
+
+        {/* Section: Heart Wall Layers */}
+        <section className="mb-20">
+          <p className="text-xs font-bold tracking-[0.2em] text-[#A71627] uppercase text-center mb-2">
+            Histological Layers
+          </p>
+          <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight text-center mb-12">
+            The Tri-Layered Heart Wall
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {HEART_WALL_LAYERS.map((layer, index) => (
+              <article
+                key={index}
+                className="rounded-3xl backdrop-blur-xl border border-white/40 bg-white/30 shadow-xl p-8 flex flex-col transition-all hover:-translate-y-1 duration-3xl"
+              >
+                <div className="mb-6">
+                  <span className="text-[10px] font-bold tracking-widest text-[#A71627] block mb-1">
+                    LAYER 0{index + 1}
+                  </span>
+                  <h3 className="font-serif text-2xl font-normal tracking-tight text-[#1F365C]">
+                    {layer.title}
+                  </h3>
+                  <p className="text-xs text-[#1F365C]/60 italic mt-1">
+                    {layer.subtitle}
+                  </p>
+                </div>
+                <div className="flex-1 space-y-6">
+                  <p className="text-sm text-[#1F365C]/80 leading-relaxed">
+                    {layer.explanation}
+                  </p>
+                  <div className="pt-6 border-t border-[#1F365C]/10">
+                    <span className="text-xs font-bold tracking-wider text-[#1F365C]/60 uppercase block mb-2">
+                      Clinical Implication
+                    </span>
+                    <p className="text-xs text-[#1F365C]/70 leading-relaxed bg-white/40 p-4 rounded-xl border border-white/50">
+                      {layer.clinical}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        {/* Section: Major Structures Grid */}
+        <section className="mb-20">
+          <p className="text-xs font-bold tracking-[0.2em] text-[#A71627] uppercase mb-2">
+            Anatomical Breakdown
+          </p>
+          <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight mb-12">
+            Primary Anatomical Pillars
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {MAJOR_STRUCTURES.map((struct, index) => (
+              <div
+                key={index}
+                className="rounded-3xl backdrop-blur-xl border border-white/40 bg-white/30 shadow-xl p-8 sm:p-10 flex flex-col justify-between transition-all hover:-translate-y-1 duration-3xl"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2.5 rounded-xl bg-white/60 border border-white/70 shadow-sm">
+                        {struct.icon}
+                      </div>
+                      <h3 className="font-serif text-2xl font-normal tracking-tight text-[#1F365C]">
+                        {struct.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-sm text-[#1F365C]/80 leading-loose mb-6">
+                    {struct.explanation}
+                  </p>
+
+                  {/* Internal Feature Chips */}
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {struct.features.map((feature, fIndex) => (
+                      <span
+                        key={fIndex}
+                        className="text-[11px] bg-white/50 px-3 py-1 rounded-full border border-white/60 text-[#1F365C]/70 font-medium"
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-[#1F365C]/10 bg-white/20 p-5 rounded-2xl border border-white/40">
+                  <div className="flex items-center gap-2 mb-2 text-xs font-bold uppercase tracking-wider text-[#A71627]">
+                    <Stethoscope className="w-3.5 h-3.5" />
+                    <span>Pathophysiology Note</span>
+                  </div>
+                  <p className="text-xs text-[#1F365C]/70 leading-relaxed">
+                    {struct.clinical}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Section: Clinical Correlation Warning Card */}
+        <section className="mb-20">
+          <article className="rounded-3xl backdrop-blur-xl border border-[#A71627]/30 bg-gradient-to-br from-white/40 via-white/30 to-[#A71627]/5 shadow-xl p-8 sm:p-12 transition-all hover:-translate-y-1 duration-3xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#A71627]/5 rounded-full blur-2xl pointer-events-none -mr-20 -mt-20" />
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 rounded-xl bg-[#A71627]/10 border border-[#A71627]/20">
+                <Activity className="w-6 h-6 text-[#A71627]" />
+              </div>
+              <div>
+                <span className="text-[10px] font-bold tracking-widest text-[#A71627] block uppercase">
+                  Advanced Medical Integration
+                </span>
+                <h3 className="font-serif text-3xl font-normal tracking-tight text-[#1F365C]">
+                  Clinical Correlation: Ischemic Cascade & STEMI
+                </h3>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 text-sm text-[#1F365C]/80 leading-loose">
+              <div className="lg:col-span-7 space-y-4">
+                <p>
+                  Acute ST-Elevation Myocardial Infarction (STEMI) represents a
+                  critical medical scenario where complete, prolonged transmural
+                  occlusion of a coronary artery leads to profound muscle layer
+                  ischemia. The downstream tissue immediately ceases cellular
+                  respiration due to the sudden arrest of oxidative
+                  phosphorylation, progressing rapidly to irreversible cell
+                  death.
+                </p>
+                <p>
+                  During the physical diagnosis phase, necrosis in the tissue
+                  manifests clearly as altered ventricular wall motion dynamics
+                  and electrical pathway shifts, causing characteristic
+                  ST-segment elevations across targeted ECG leads corresponding
+                  to anatomical vascular fields.
+                </p>
+              </div>
+              <div className="lg:col-span-5 bg-white/40 border border-white/60 p-6 rounded-2xl flex flex-col justify-center space-y-4 text-xs">
+                <div className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 bg-[#A71627] rounded-full shrink-0 mt-1.5" />
+                  <p>
+                    <strong>LAD Occlusion:</strong> Reflects as anterior wall
+                    changes across electrocardiogram precordial leads V1–V4.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 bg-[#A71627] rounded-full shrink-0 mt-1.5" />
+                  <p>
+                    <strong>RCA Occlusion:</strong> Leads to inferior wall
+                    alterations tracking clearly inside limb leads II, III, and
+                    aVF.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 bg-[#A71627] rounded-full shrink-0 mt-1.5" />
+                  <p>
+                    <strong>Therapeutic Goal:</strong> Urgent percutaneous
+                    coronary intervention (PCI) to restore arterial patency
+                    within the golden 90-minute medical standard.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        {/* Section: Key Takeaways */}
+        <section className="mb-20">
+          <div className="rounded-3xl backdrop-blur-xl border border-white/40 bg-white/30 shadow-xl p-8 sm:p-12 transition-all hover:-translate-y-1 duration-3xl">
+            <h3 className="font-serif text-2xl font-normal tracking-tight mb-8">
+              Essential High-Yield Takeaways
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {KEY_TAKEAWAYS.map((takeaway, index) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-4 p-4 rounded-xl bg-white/20 border border-white/40"
+                >
+                  <CircleCheck className="w-5 h-5 text-[#A71627] shrink-0 mt-0.5" />
+                  <p className="text-sm text-[#1F365C]/90 leading-relaxed">
+                    {takeaway}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
