@@ -93,8 +93,8 @@ function AnatomyGrid() {
                 blood vessels.
               </p>
 
-              <a
-                href="#heart-structure"
+              <Link
+                to="/Anatomy/AnatomyHeartLocation"
                 className="
                 absolute right-10 bottom-0 
                 p-5
@@ -111,7 +111,7 @@ function AnatomyGrid() {
               >
                 Explore Location
                 <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

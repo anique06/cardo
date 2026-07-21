@@ -49,20 +49,19 @@ const loLinks = [
 
 const learningOutcomes = [
   {
-    title: "Explain external features of the heart",
+    title: "State the boundaries and the contents of thoracic cage",
     path: "#lo1",
   },
   {
-    title: "Describe the internal features of the chambers of the heart",
+    title: "Describe mediastinum and its divisions",
     path: "#lo2",
   },
   {
-    title:
-      "Describe origin, course, branches, area of supply of coronary arteries",
+    title: "Describe mediastinum contents",
     path: "#lo3",
   },
   {
-    title: "Discuss the venous drainage of heart",
+    title: "Describe the great vessels that are directly related to the heart",
     path: "#lo4",
   },
   {
@@ -138,7 +137,7 @@ const KEY_TAKEAWAYS: string[] = [
 // COMPONENT IMPLEMENTATION
 // ============================================================================
 
-export default function AnatomyHeartStructure() {
+export default function AnatomyHeartLocation() {
   return (
     <div
       id="top"
@@ -146,7 +145,7 @@ export default function AnatomyHeartStructure() {
     >
       <div className="bg-blend-soft-light relative h-20 overflow-hidden rounded-xl">
         <img
-          src="/HeartStructure.png"
+          src="/HeartLocation.png"
           className="w-full h-full object-cover"
           alt=""
         />
@@ -172,10 +171,10 @@ export default function AnatomyHeartStructure() {
         {/* Hero Header Section */}
         <header className="mb-16">
           <p className="text-xs font-bold tracking-[0.3em] text-[#A71627] uppercase mb-3">
-            Heart Structure
+            Heart Location
           </p>
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-[#1F365C] leading-[1.15] max-w-4xl">
-            The Structure & Composition of the Heart
+            The Place of The Heart & Its Surrounding
           </h1>
         </header>
 
