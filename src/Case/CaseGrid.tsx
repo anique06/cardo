@@ -1,4 +1,5 @@
 import { ArrowRight, Dot } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function CaseGrid() {
   return (
@@ -26,8 +27,8 @@ function CaseGrid() {
 
               <p className="mt-3 text-slate-600 leading-7">Acute Inferior MI</p>
 
-              <a
-                href="#heart-structure"
+              <Link
+                to="/Case/MI"
                 className="
                 absolute right-10 bottom-0 
                 p-5
@@ -44,7 +45,7 @@ function CaseGrid() {
               >
                 Read More
                 <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 import React from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+
 import {
   Heart,
   Activity,
@@ -139,6 +141,9 @@ const KEY_TAKEAWAYS: string[] = [
 // ============================================================================
 
 export default function AnatomyHeartStructure() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div
       id="top"

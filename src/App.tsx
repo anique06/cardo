@@ -3,6 +3,8 @@ import { Analytics } from "@vercel/analytics/react";
 import Home from "./Home";
 import AnatomyHeartStructure from "./Anatomy/AnatomyHeartStructure";
 import AnatomyHeartLocation from "./Anatomy/AnatomyHeartLocation";
+import ECG from "./Physiology/ECG/ECG";
+import MI from "./Case/MI";
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
           path="/Anatomy/AnatomyHeartLocation"
           element={<AnatomyHeartLocation />}
         />
+
+        <Route path="/Case/MI" element={<MI />} />
+
+        <Route path="/Physiology/ECG/ECG" element={<ECG />} />
       </Routes>
 
       <Analytics />
