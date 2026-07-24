@@ -1,39 +1,19 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
-  Heart,
   Activity,
-  Stethoscope,
-  Shield,
   ArrowLeft,
   CircleCheck,
   BookOpen,
-  Brain,
   BadgeInfo,
 } from "lucide-react";
 import HeartCanvas from "../HeartCanvas";
-import AnatomyLo1 from "./AnatomyLo1";
-import AnatomyLo2 from "./AnatomyLo2";
-import AnatomyLo3 from "./AnatomyLo3";
-import AnatomyLo4 from "./AnatomyLo4";
-import AnatomyLo5 from "./AnatomyLo5";
+import AnatLo2 from "./AnatLo2";
+import AnatLo3 from "./AnatLo3";
+import AnatLo4 from "./AnatLo4";
 
 // ============================================================================
 // TYPES & INTERFACES
 // ============================================================================
-
-interface QuickFact {
-  label: string;
-  value: string;
-  icon: React.ReactNode;
-}
-
-interface LayerData {
-  title: string;
-  subtitle: string;
-  explanation: string;
-  clinical: string;
-}
 
 // ============================================================================
 // DATA CONFIGURATIONS
@@ -43,8 +23,6 @@ const loLinks = [
   { id: "lo1", label: "LO1" },
   { id: "lo2", label: "LO2" },
   { id: "lo3", label: "LO3" },
-  { id: "lo4", label: "LO4" },
-  { id: "lo5", label: "LO5" },
 ];
 
 const learningOutcomes = [
@@ -53,84 +31,20 @@ const learningOutcomes = [
     path: "#lo1",
   },
   {
-    title: "Describe mediastinum and its divisions",
+    title: "Describe mediastinum, its divisions and contents",
     path: "#lo2",
   },
   {
-    title: "Describe mediastinum contents",
-    path: "#lo3",
-  },
-  {
     title: "Describe the great vessels that are directly related to the heart",
-    path: "#lo4",
-  },
-  {
-    title: "Describe the innervation and conducting system of the heart",
-    path: "#lo5",
-  },
-];
-
-const QUICK_FACTS: QuickFact[] = [
-  {
-    label: "Weight",
-    value: "250–350 g",
-    icon: <Activity className="w-4 h-4 text-[#A71627]" />,
-  },
-  {
-    label: "Location",
-    value: "Middle Mediastinum",
-    icon: <Brain className="w-4 h-4 text-[#A71627]" />,
-  },
-  {
-    label: "Chambers",
-    value: "4 Functional Cavities",
-    icon: <Heart className="w-4 h-4 text-[#A71627]" />,
-  },
-  {
-    label: "Valves",
-    value: "4 Mechanical Valves",
-    icon: <Shield className="w-4 h-4 text-[#A71627]" />,
-  },
-  {
-    label: "Blood Supply",
-    value: "Coronary Arteries",
-    icon: <Stethoscope className="w-4 h-4 text-[#A71627]" />,
-  },
-];
-
-const HEART_WALL_LAYERS: LayerData[] = [
-  {
-    title: "Epicardium",
-    subtitle: "Visceral Layer of Serous Pericardium",
-    explanation:
-      "The outermost protective protective layer, composed of mesothelium and delicate connective tissue. It houses the main coronary blood vessels and nerves that supply the muscular layer below, cushioned by a variable layer of adipose tissue.",
-    clinical:
-      "Pericarditis can cause inflammation tracking directly into the epicardium (epi-myocarditis), disrupting the smooth, friction-free movement within the pericardial cavity and leading to pericardial friction rubs detectable via auscultation.",
-  },
-  {
-    title: "Myocardium",
-    subtitle: "The Core Muscular Syncytium",
-    explanation:
-      'The structural and functional powerhouse forming the bulk of the heart wall. It consists of specialized involuntary, striated cardiac muscle fibers arranged spirally around the chambers. This arrangement allows a highly efficient "wringing" contraction mechanism.',
-    clinical:
-      "Myocardial cells are highly vulnerable to ischemia. Occlusion of coronary vessels leads swiftly to Myocardial Infarction (MI), where localized necrosis triggers irreversible damage, fibrous scar tissue remodeling, and compromised stroke volume.",
-  },
-  {
-    title: "Endocardium",
-    subtitle: "Internal Endothelial Interface",
-    explanation:
-      "A glistening, ultra-smooth inner membrane consisting of simple squamous endothelial cells overlying thin fibroelastic connective tissue. It lines all chambers and continuously covers the structural elements of the cardiac valves to minimize blood turbulence.",
-    clinical:
-      "Endothelial disruption predisposes patients to Infective Endocarditis. Pathogens form bacterial vegetations on vulnerable valve leaflets, potentially destroying structural scaffolding or breaking loose as systemic septic emboli.",
+    path: "#lo3",
   },
 ];
 
 const KEY_TAKEAWAYS: string[] = [
-  "Student can state and explain about heart features based on external components",
-  "Student will be able to describe each chamber of the heart and its internal features",
-  "Student can differentiate between the coronary arteries and their branches, and describe their course and area of supply",
-  "Student will be able to describe the venous drainage of the heart and its clinical significance",
-  "Student can understand the innervation of the heart and how the electrical impulses are conducted",
+  "Student will master the spatial framework of the thoracic cage",
+  "Student will systematically compartmentalize the mediastinum",
+  "Student will map the structural and functional relationships of the great vessels",
+  "Student will integrate anatomical landmarks with high-yield clinical procedures",
 ];
 
 // ============================================================================
@@ -205,45 +119,24 @@ export default function AnatomyHeartLocation() {
                 </h3>
               </div>
               <p className="text-sm text-[#1F365C]/80 leading-loose mb-6">
-                The human heart is a highly specialized, self-perpetuating
-                muscular syncytium tasked with maintaining systemic perfusion
-                pressure. Suspended inside the middle mediastinum within a
-                fibroserous pericardial envelope, its muscular walls configure a
-                synchronized four-chamber system that isolates deoxygenated
-                blood returning from peripheral structures from highly
-                oxygenated blood destined for corporal delivery.
+                The heart is situated within the thoracic cavity inside the
+                central compartment known as the middle mediastinum. Nestled
+                securely between the left and right lungs, it sits directly
+                above the diaphragm and lies posterior to the sternum and costal
+                cartilages. It is enclosed within a protective, double-walled
+                sac called the pericardium, which anchors the heart in place
+                while lubricating its surface to prevent friction against
+                neighboring chest organs during every beat.
               </p>
-              <div className="p-4 rounded-2xl bg-red-50/80  inset-shadow-sm border border-white/60 text-xs text-[#1F365C]/90 leading-relaxed flex gap-3">
+
+              <div className="p-4 rounded-2xl bg-red-50/80 inset-shadow-sm border border-white/60 text-xs text-[#1F365C]/90 leading-relaxed flex gap-3">
                 <BadgeInfo className="w-4 h-4 text-[#A71627] shrink-0 mt-0.5" />
                 <span>
-                  <strong>Anatomical Position Note:</strong> The long axis of
-                  the heart runs obliquely down and forward from base to apex,
-                  rotated so its right aspect presents almost entirely to the
-                  anterior chest wall.
+                  <strong>Anatomical Boundaries Note:</strong> The heart is
+                  bounded anteriorly by the sternum, laterally by the lungs and
+                  pleura, posteriorly by the esophagus and thoracic aorta, and
+                  inferiorly by the fibrous central tendon of the diaphragm.
                 </span>
-              </div>
-            </article>
-
-            {/* Quick Facts Card */}
-            <article className="rounded-3xl  border border-white/40 bg-white shadow-xl p-8 sm:p-10 transition-all hover:-translate-y-1 duration-3xl">
-              <h3 className="font-serif text-xl font-medium tracking-tight mb-6">
-                Morphological Benchmarks
-              </h3>
-              <div className="divide-y divide-[#1F365C]/10">
-                {QUICK_FACTS.map((fact, index) => (
-                  <div
-                    key={index}
-                    className="py-4 flex items-center justify-between first:pt-0 last:pb-0"
-                  >
-                    <div className="flex items-center gap-3 text-sm text-[#1F365C]/70">
-                      {fact.icon}
-                      <span>{fact.label}</span>
-                    </div>
-                    <span className="text-sm font-medium tracking-wide text-[#1F365C]">
-                      {fact.value}
-                    </span>
-                  </div>
-                ))}
               </div>
             </article>
           </div>
@@ -288,9 +181,9 @@ export default function AnatomyHeartLocation() {
           </div>
         </section>
 
-        {/* Section: External Anatomy */}
         <section id="lo1">
-          <AnatomyLo1 />
+          <AnatLo2 />
+
           <nav
             className="
     mt-10 
@@ -320,51 +213,8 @@ export default function AnatomyHeartLocation() {
           </nav>
         </section>
 
-        {/* Section: Heart Wall Layers */}
-        <section className="mb-20">
-          <p className="text-xs font-bold tracking-[0.2em] text-[#A71627] uppercase text-center mb-2">
-            Histological Layers
-          </p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight text-center mb-12">
-            The Tri-Layered Heart Wall
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {HEART_WALL_LAYERS.map((layer, index) => (
-              <article
-                key={index}
-                className="rounded-3xl backdrop-blur-xl border border-white/40 bg-white/30 shadow-xl p-8 flex flex-col transition-all hover:-translate-y-1 duration-3xl"
-              >
-                <div className="mb-6">
-                  <span className="text-[10px] font-bold tracking-widest text-[#A71627] block mb-1">
-                    LAYER 0{index + 1}
-                  </span>
-                  <h3 className="font-serif text-2xl font-normal tracking-tight text-[#1F365C]">
-                    {layer.title}
-                  </h3>
-                  <p className="text-xs text-[#1F365C]/60 italic mt-1">
-                    {layer.subtitle}
-                  </p>
-                </div>
-                <div className="flex-1 space-y-6">
-                  <p className="text-sm text-[#1F365C]/80 leading-relaxed">
-                    {layer.explanation}
-                  </p>
-                  <div className="pt-6 border-t border-[#1F365C]/10">
-                    <span className="text-xs font-bold tracking-wider text-[#1F365C]/60 uppercase block mb-2">
-                      Clinical Implication
-                    </span>
-                    <p className="text-xs text-[#1F365C]/70 leading-relaxed bg-white/40 p-4 rounded-xl border border-white/50">
-                      {layer.clinical}
-                    </p>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section id="lo2">
-          <AnatomyLo2 />
+          <AnatLo3 />
 
           <nav
             className="
@@ -396,74 +246,11 @@ export default function AnatomyHeartLocation() {
         </section>
 
         <section id="lo3">
-          <AnatomyLo3 />
+          <AnatLo4 />
 
           <nav
             className="
-    mt-10 
-    flex items-center gap-4 
-    text-sm font-medium 
-    tracking-wide 
-    text-[#1F365C]/70
-  "
-          >
-            {loLinks.map(({ id, label }) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                className="
-        rounded-full 
-        border border-[#A71627]/30
-        px-3 py-1
-        text-[#A71627]
-        transition-all
-        hover:bg-[#A71627]
-        hover:text-white
-      "
-              >
-                {label}
-              </a>
-            ))}
-          </nav>
-        </section>
-
-        <section id="lo4">
-          <AnatomyLo4 />
-
-          <nav
-            className="
-    mt-10 
-    flex items-center gap-4 
-    text-sm font-medium 
-    tracking-wide 
-    text-[#1F365C]/70
-  "
-          >
-            {loLinks.map(({ id, label }) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                className="
-        rounded-full 
-        border border-[#A71627]/30
-        px-3 py-1
-        text-[#A71627]
-        transition-all
-        hover:bg-[#A71627]
-        hover:text-white
-      "
-              >
-                {label}
-              </a>
-            ))}
-          </nav>
-        </section>
-
-        <section id="lo5" className="pb-5">
-          <AnatomyLo5 />
-
-          <nav
-            className="
+            mb-6
     mt-10 
     flex items-center gap-4 
     text-sm font-medium 

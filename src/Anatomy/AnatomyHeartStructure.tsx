@@ -496,7 +496,7 @@ export default function AnatomyHeartStructure() {
         <section className="mb-20">
           <div className="rounded-3xl backdrop-blur-xl border border-white/40 bg-white/30 shadow-xl p-8 sm:p-12 transition-all hover:-translate-y-1 duration-3xl">
             <h3 className="font-serif text-2xl font-normal tracking-tight mb-8">
-              Essential High-Yield Takeaways
+              What Student Get After Learning
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {KEY_TAKEAWAYS.map((takeaway, index) => (
