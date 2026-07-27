@@ -102,7 +102,7 @@ function PhysiologyGrid() {
 
             <div className="flex justify-end">
               <Link
-                to="/Physiology/ECG/ECG"
+                to="/Physiology/MusclePhysiology/MusclePhysiology"
                 className="
                 absolute right-10 bottom-0 
                 p-5
@@ -117,7 +117,7 @@ function PhysiologyGrid() {
                     group-hover:gap-3
                 "
               >
-                Explore Anatomy
+                Explore Muscle Physiology
                 <ArrowRight size={18} />
               </Link>
             </div>

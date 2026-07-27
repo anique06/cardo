@@ -4,6 +4,7 @@ import Home from "./Home";
 import AnatomyHeartStructure from "./Anatomy/AnatomyHeartStructure";
 import AnatomyHeartLocation from "./Anatomy/AnatomyHeartLocation";
 import ECG from "./Physiology/ECG/ECG";
+import MusclePhysiology from "./Physiology/MusclePhysiology/MusclePhysiology";
 import MI from "./Case/MI";
 
 function App() {
@@ -19,6 +20,11 @@ function App() {
         <Route
           path="/Anatomy/AnatomyHeartLocation"
           element={<AnatomyHeartLocation />}
+        />
+
+        <Route
+          path="/Physiology/MusclePhysiology/MusclePhysiology"
+          element={<MusclePhysiology />}
         />
 
         <Route path="/Case/MI" element={<MI />} />
