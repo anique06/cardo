@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { useEffect } from "react";
 import ElectricalProperties from "./ElectricalProperties";
+import MechanicalProperties from "./MechanicalProperties";
 
 // ============================================================================
 // TYPES & INTERFACES
@@ -255,6 +256,12 @@ export default function MusclePhysiology() {
               ))}
             </div>
           </div>
+        </section>
+
+        {/* content  */}
+
+        <section>
+          <MechanicalProperties />
         </section>
 
         {/* Section: Key Takeaways */}
