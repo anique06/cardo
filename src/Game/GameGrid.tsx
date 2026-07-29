@@ -8,8 +8,8 @@ function GameGrid() {
         className="flex justify-center lg:justify-start mb-5 mt-20"
       >
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium tracking-tight text-slate-900 leading-[1.1]">
-          Test your knowledge with our{" "}
-          <span className="italic text-red-700">Game !</span>
+          Test your knowledge with some{" "}
+          <span className="italic text-red-700">Quiz !</span>
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

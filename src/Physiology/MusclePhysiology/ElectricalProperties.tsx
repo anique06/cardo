@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Stethoscope } from "lucide-react";
 import VentricularCardioAPGraph from "./VentricularCardioAPGraph";
+import Game from "./Game";
 
 interface Section {
   id: string;
@@ -771,6 +772,14 @@ export default function ElectricalProperties() {
               </ul>
             </p>
           </article>
+
+          <header className="w-full border-b border-[#1F365C]/10 pb-5">
+            
+            <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight">
+              Let's Test Your Knowledge ! 
+            </h2>
+          </header>
+          <Game />
           {/* ROW 1: TOP IMAGE CONTAINER */}
           <div className="w-full flex justify-center"></div>
         </div>

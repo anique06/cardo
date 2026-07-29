@@ -63,7 +63,7 @@ function Header() {
         variants={itemVariants}
       >
         <a
-          href="#modules"
+          href="#GetStarted"
           className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium text-white bg-[#A71627] rounded-full shadow-sm hover:bg-red-800 transition-colors duration-200"
         >
           Get Started

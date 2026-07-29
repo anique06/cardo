@@ -53,12 +53,13 @@ const learningOutcomes2 = [
     path: "#lo23",
   },
 ];
-
 const KEY_TAKEAWAYS: string[] = [
-  "Student will master the spatial framework of the thoracic cage",
-  "Student will systematically compartmentalize the mediastinum",
-  "Student will map the structural and functional relationships of the great vessels",
-  "Student will integrate anatomical landmarks with high-yield clinical procedures",
+  "Student will be able to map the 5 phases of the ventricular action potential to their specific ion currents (fast Na+ upstroke, L-type Ca2+ plateau, delayed rectifier K+ repolarization).",
+  "Student will be able to explain how the prolonged absolute refractory period during the plateau phase prevents cardiac muscle tetany and ensures adequate diastolic filling.",
+  "Student will be able to predict the effects of electrolyte imbalances (hyper/hypokalemia) and antiarrhythmic drug classes (I, III, IV) on cardiac electrical activity and ECG waveforms.",
+  "Student will be able to describe the steps of calcium-induced calcium release (CICR) via RyR2 receptors and SERCA2a/phospholamban-mediated relaxation in cardiac myocyte contraction.",
+  "Student will be able to differentiate between intrinsic Frank-Starling mechanisms (preload/stretch) and extrinsic sympathetic regulation (beta-1/cAMP/PKA) of cardiac contractility.",
+  "Student will be able to interpret clinical alterations in mechanical function, including reduced ejection fraction in systolic heart failure and the positive inotropic mechanism of digoxin.",
 ];
 
 // ============================================================================
@@ -118,7 +119,7 @@ export default function MusclePhysiology() {
             <div className="w-full aspect-[4/3] sm:aspect-square lg:h-[calc(100vh-12rem)] rounded-3xl  border border-white/40 bg-white shadow-xl overflow-hidden relative group">
               <div className="absolute top-6 left-6 z-20 flex items-center gap-3 bg-white/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/50 shadow-sm text-xs font-medium tracking-wide text-[#1F365C]/80">
                 <Activity className="w-3.5 h-3.5 text-[#A71627] animate-pulse" />
-                <span>ECG GRAPH</span>
+                <span>HEART MUSCLE</span>
               </div>
 
               <div className="absolute bottom-6 right-6 z-20 text-[10px] uppercase tracking-widest text-[#1F365C]/40 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">

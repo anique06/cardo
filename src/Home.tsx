@@ -7,6 +7,7 @@ import PhysiologyGrid from "./Physiology/PhysiologyGrid";
 import GameGrid from "./Game/GameGrid";
 import CaseGrid from "./Case/CaseGrid";
 import Footer from "./Footer";
+import GetStarted from "./GetStarted";
 
 function App(): React.JSX.Element {
   return (
@@ -44,6 +45,13 @@ function App(): React.JSX.Element {
             />
           </div>
         </main>
+
+        {/* Anatomy Section */}
+        <section>
+          <div className="items-center py-10">
+            <GetStarted />
+          </div>
+        </section>
 
         {/* Anatomy Section */}
         <section>
