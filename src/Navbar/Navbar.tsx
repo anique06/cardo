@@ -139,7 +139,8 @@ function Navbar() {
 
           {/* Right Side */}
           <div className="hidden md:flex items-center gap-4">
-            <button
+            <a
+              href="#GetStarted"
               className="
                 rounded-full
                 bg-[#A71627]
@@ -155,7 +156,7 @@ function Navbar() {
               "
             >
               Get Started
-            </button>
+            </a>
           </div>
 
           {/* Mobile Button */}
@@ -205,7 +206,8 @@ function Navbar() {
                 </a>
               ))}
 
-              <button
+              <a
+                href="#GetStarted"
                 className="
                   mt-2
                   rounded-full
@@ -216,7 +218,7 @@ function Navbar() {
                 "
               >
                 Get Started
-              </button>
+              </a>
             </div>
           </div>
         )}
