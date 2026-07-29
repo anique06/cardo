@@ -199,22 +199,25 @@ function PhysiologyGrid() {
             </div>
 
             <div className="flex justify-end">
-              <a
-                href="#cardiac-cycle"
+              <Link
+                to="/Physiology/CardiacCycle/cardiacCycle"
                 className="
-          inline-flex
-          items-center
-          gap-2
-          font-semibold
-          text-[#A71627]
-          transition-all
-          duration-300
-          group-hover:gap-3
-        "
+                absolute right-10 bottom-0 
+                p-5
+                    mt-6
+                    inline-flex
+                    items-center
+                    gap-8
+                    font-semibold
+                    text-[#A71627]
+                    transition-all
+                    duration-300
+                    group-hover:gap-3
+                "
               >
                 Explore Cardiac Cycle
                 <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ import GetStarted from "./GetStarted";
 
 function App(): React.JSX.Element {
   return (
-    <div className="relative min-h-screen overflow-visible bg-[#FDF8F5] font-sans">
+    <div className="relative min-h-screen  selection:bg-[#A71627]/10 selection:text-[#A71627] overflow-visible bg-[#FDF8F5] font-sans">
       {/* Background Shape */}
 
       {/* Floating Navbar */}
