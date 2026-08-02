@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Stethoscope } from "lucide-react";
+import MechanicalGame from "./MechanicalGame";
 
 interface Section {
   id: string;
@@ -1140,6 +1141,12 @@ export default function MechanicalProperties() {
               </div>
             </div>
           </div>
+          <header>
+          <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight">
+                        Let's Test Your Knowledge ! 
+                      </h2>
+          </header>
+            <MechanicalGame />
         </div>
       </section>
     </>
