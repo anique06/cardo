@@ -415,6 +415,103 @@ function PhysiologyGrid() {
             </div>
           </div>
         </div>
+
+        {/* CARD 4: Pathophysiology */}
+        <div
+          className="
+          relative
+          overflow-hidden
+          h-60
+          group
+          rounded-2xl
+          border border-slate-100
+          bg-white
+          transition-all
+          duration-300
+          hover:border-red-200
+          hover:shadow-lg
+        "
+        >
+          {/* Background Image */}
+          <img
+            src="/HeartPatophysiology.png"
+            alt=""
+            className="
+            absolute
+            inset-0
+            h-full
+            w-full
+            object-cover
+            object-right
+            opacity-90
+            transition-transform
+            duration-500
+            group-hover:scale-105
+          "
+          />
+
+          {/* White Gradient Overlay */}
+          <div
+            className="
+            absolute
+            inset-0
+            bg-gradient-to-l
+            from-transparent
+            via-white/100
+            to-white
+          "
+          />
+
+          {/* Optional Blur Layer */}
+          <div
+            className="
+            absolute
+            inset-0
+            backdrop-blur-[1px]
+          "
+          />
+
+          {/* Content */}
+          <div className="relative z-10 flex h-full flex-col justify-between p-8">
+            <div className="flex items-start gap-5">
+              <div className="rounded-2xl bg-red-50 p-3 shrink-0">
+                <HeartCrack className="text-[#A71627]" size={32} />
+              </div>
+
+              <div className="flex-1 max-w-[70%]">
+                <h2 className="text-2xl font-bold text-slate-800">
+                  Cardiovascular Hemodynamic
+                </h2>
+
+                <p className="mt-4 text-slate-600 leading-relaxed text-sm sm:text-base">
+                  Examine what happens when physiological systems fail,
+                  exploring the mechanisms behind heart failure, arrhythmias,
+                  and ischemic heart disease.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex justify-end">
+              <a
+                href="#pathophysiology"
+                className="
+                shadow-white
+          inline-flex
+          items-center
+          gap-2
+          font-semibold
+          text-[#A71627]
+          transition-all
+          duration-300
+          group-hover:gap-3
+        "
+              >
+                Explore Cardiovascular Hemodynamic
+                <ArrowRight size={18} />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

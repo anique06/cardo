@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import CardiacSynthesisDisplay from "./CardiacSynthesisDisplay";
+import SynthesisPartTwo from "./SynthesisPartTwo";
 
 interface Section {
   id: string;
@@ -153,6 +155,8 @@ export default function HeartSound() {
           </div>
         </div>
       </section>
+      <CardiacSynthesisDisplay />
+      <SynthesisPartTwo />
     </>
   );
 }

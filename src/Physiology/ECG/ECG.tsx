@@ -8,6 +8,24 @@ import {
 } from "lucide-react";
 import { useEffect } from "react";
 import ECGGraph from "./ECGGraph";
+
+const learningOutcomes = [
+  {
+    title:
+      "Interpret normal and common abnormal electrocardiogram by systemically analyzing heart rate, rythm, cardiac axis, intervals, waveforms, and ST-T changes",
+    path: "#lo1",
+  },
+  {
+    title:
+      "Recognize characteristic ECG findings associated with common cardiovascular disease and correlate them with the patient's clinical presentation",
+    path: "#lo2",
+  },
+  {
+    title:
+      "Integrate ECG findings with the patient's history and physical examination to formulate differential diagnoses",
+    path: "#lo3",
+  },
+];
 // ============================================================================
 // TYPES & INTERFACES
 // ============================================================================
@@ -119,6 +137,44 @@ export default function MusclePhysiology() {
                 </span>
               </div>
             </article>
+          </div>
+        </section>
+
+        {/* Section: Overview */}
+        <section className="mb-20">
+          <div className="rounded-3xl border border-white/40 bg-white backdrop-blur-xl shadow-xl p-8 sm:p-12">
+            <h2 className="mb-6 font-serif text-3xl font-medium text-[#1F365C]">
+              Learning Outcomes
+            </h2>
+
+            <div>
+              {learningOutcomes.map((item) => (
+                <a
+                  href={item.path}
+                  className="
+                            group
+                            flex
+                            items-center
+                            justify-between
+                        rounded-2xl
+                            p-2
+                            transition-all
+                            duration-300
+                            hover:border-[#A71627]/30
+                            hover:bg-red-50
+                        "
+                >
+                  <div className="flex items-center gap-4">
+                    <CircleCheck
+                      size={20}
+                      className="text-[#A71627] shrink-0"
+                    />
+
+                    <span className="text-[#1F365C]">{item.title}</span>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
         </section>
 

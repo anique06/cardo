@@ -81,22 +81,22 @@ export default function LearningJourney() {
   return (
     <section
       id="GetStarted"
-      className="relative w-full min-h-screen py-24 overflow-hidden"
+      className="relative w-full min-h-screen py-24 overflow-visible"
     >
       {/* 1. Premium Apple-style Background Elements */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none ">
         {/* Subtle dot grid */}
         <div
           className="absolute inset-0 opacity-[0.15]"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 2px 2px, #1F365C 1px, transparent 0)",
+              "radial-gradient(circle at 2px 2px, #da3030 1px, transparent 0)",
             backgroundSize: "40px 40px",
           }}
         />
         {/* Faint radial glows */}
-        <div className="absolute top-0 -left-40 w-[800px] h-[800px] bg-red-50/60 rounded-full blur-[120px]" />
-        <div className="absolute top-1/2 -right-40 w-[600px] h-[600px] bg-blue-50/50 rounded-full blur-[100px]" />
+        <div className="absolute top-0 -left-40 w-[800px] h-[800px] bg-red-100/60 rounded-full blur-[120px]" />
+        <div className="absolute top-1/2 -right-40 w-[600px] h-[600px] bg-red-200/50 rounded-full blur-[100px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
