@@ -19,6 +19,8 @@ import {
 import CardiacCycleGraph from "./CardiacCycleGraph";
 import React, { useState, useEffect } from "react";
 import CardiacCycleGame from "./CardiacCycleGame";
+import CardiacCycleDashboard from "./CardiacCycleDashboard";
+import HeartSound from "./HeartSound";
 
 // ============================================================================
 // TYPES & INTERFACES
@@ -774,7 +776,7 @@ export default function CardiacCycle() {
             </header>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className=" relative rounded-3xl border border-white/40 bg-white backdrop-blur-xl shadow-xl p-8 sm:p-12">
+              <div className="relative rounded-3xl border border-white/40 bg-white backdrop-blur-xl shadow-xl p-8 sm:p-12">
                 <h2 className="mb-3 font-serif text-3xl font-medium text-[#1F365C]">
                   The Electrician
                 </h2>
@@ -962,6 +964,9 @@ export default function CardiacCycle() {
               )}
             </div>
           </div>
+
+          <CardiacCycleDashboard />
+          <HeartSound />
 
           <header className="w-full border-b border-[#1F365C]/10 pb-5">
             <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight">
