@@ -1,5 +1,3 @@
-import { Stethoscope, Activity, ShieldAlert, Zap } from "lucide-react";
-
 import React, { useState } from "react";
 
 interface Section {
