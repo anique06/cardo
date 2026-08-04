@@ -218,7 +218,7 @@ const sections2: Section2[] = [
         </p>
 
         {/* Overview */}
-        <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-4 shadow-sm">
+        {/* <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-4 shadow-sm">
           <h4 className="font-semibold text-[#A71627] mb-2">
             Intrinsic Regulation
           </h4>
@@ -226,7 +226,7 @@ const sections2: Section2[] = [
           <p className="text-sm font-medium">
             Frank-Starling Law → Bowditch (Treppe) Effect → Anrep Effect
           </p>
-        </div>
+        </div> */}
 
         {/* Frank-Starling */}
         <div className="rounded-xl border border-red-200 bg-red-50/70 p-4 shadow-sm">
@@ -249,7 +249,7 @@ const sections2: Section2[] = [
           </div>
         </div>
 
-        {/* Bowditch */}
+        {/* Bowditch
         <div className="rounded-xl border border-blue-200 bg-blue-50/70 p-4 shadow-sm">
           <h4 className="font-semibold text-[#A71627] mb-2">
             B. Bowditch (Treppe) Effect
@@ -270,7 +270,7 @@ const sections2: Section2[] = [
           </div>
         </div>
 
-        {/* Anrep */}
+        {/* Anrep 
         <div className="rounded-xl border border-amber-200 bg-amber-50/70 p-4 shadow-sm">
           <h4 className="font-semibold text-[#A71627] mb-2">C. Anrep Effect</h4>
 
@@ -288,11 +288,12 @@ const sections2: Section2[] = [
             </ul>
           </div>
         </div>
+
+        */}
       </div>
     ),
 
-    clinicalTip:
-      "Exam tip: Frank-Starling = ↑ Preload | Bowditch = ↑ Heart Rate | Anrep = ↑ Afterload → All increase contractility through different mechanisms.",
+    clinicalTip: "Exam tip: Frank-Starling = ↑ Preload ",
   },
   {
     id: "extrinsicmechanisms",
@@ -1142,11 +1143,11 @@ export default function MechanicalProperties() {
             </div>
           </div>
           <header>
-          <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight">
-                        Let's Test Your Knowledge ! 
-                      </h2>
+            <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight">
+              Let's Test Your Knowledge !
+            </h2>
           </header>
-            <MechanicalGame />
+          <MechanicalGame />
         </div>
       </section>
     </>

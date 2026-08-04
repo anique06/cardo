@@ -7,6 +7,8 @@ import ECG from "./Physiology/ECG/ECG";
 import MusclePhysiology from "./Physiology/MusclePhysiology/MusclePhysiology";
 import CardiacCycle from "./Physiology/CardiacCycle/CardiacCycle";
 import MI from "./Case/MI";
+import CardioHemo from "./Physiology/CardioHemo/CardioHemo";
+import PatoPhy from "./Physiology/PatoPhy/PatoPhy";
 
 function App() {
   return (
@@ -33,9 +35,16 @@ function App() {
           element={<CardiacCycle />}
         />
 
+        <Route
+          path="/Physiology/CardioHemo/CardioHemo"
+          element={<CardioHemo />}
+        />
+
         <Route path="/Case/MI" element={<MI />} />
 
         <Route path="/Physiology/ECG/ECG" element={<ECG />} />
+
+        <Route path="/Physiology/PatoPhy/PatoPhy" element={<PatoPhy />} />
       </Routes>
 
       <Analytics />

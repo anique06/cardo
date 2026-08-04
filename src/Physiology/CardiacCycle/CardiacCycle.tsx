@@ -298,7 +298,9 @@ const learningOutcomes = [
 ];
 
 const KEY_TAKEAWAYS: string[] = [
-  "Student will be able to map the 5 phases of the ventricular action potential to their specific ion currents (fast Na+ upstroke, L-type Ca2+ plateau, delayed rectifier K+ repolarization).",
+  "Student will be able to correlate electrical waves (P, QRS, T) with their mechanical phases, heart sounds (S1, S2), and volume changes.",
+  "Student will be able to analyze pressure gradients across chambers that drive valve opening, closing, and the two isovolumetric phases.",
+  "Student will be able to differentiate the pathophysiology of abnormal heart sounds, including S3/S4 gallops and systolic vs. diastolic murmurs.",
 ];
 
 // ============================================================================
@@ -693,22 +695,20 @@ export default function CardiacCycle() {
                 </h3>
               </div>
               <p className="text-sm text-[#1F365C]/80 leading-loose mb-6">
-                Muscle physiology explores how electrical signals convert into
-                physical movement across skeletal, cardiac, and smooth muscle
-                tissues. At the structural level, contraction relies on sliding
-                filament theory, where protein filaments (primarily actin and
-                myosin) interact in response to calcium release and ATP
-                consumption.
+                The cardiac cycle encompasses all electrical and mechanical
+                events occurring within a single heartbeat (lasting
+                approximately 0.8 seconds at a normal resting heart rate of 75
+                bpm). Functionally, it alternates between period of contraction
+                and ejection (Systole) and relaxation and filling (Diastole).
               </p>
 
               <div className="p-4 rounded-2xl bg-red-50/80 inset-shadow-sm border border-white/60 text-xs text-[#1F365C]/90 leading-relaxed flex gap-3">
                 <BadgeInfo className="w-4 h-4 text-[#A71627] shrink-0 mt-0.5" />
                 <span>
-                  <strong>Important Note:</strong> Cardiac muscle tissue lacks
-                  the ability to undergo significant cell division or repair.
-                  Because functional heart muscle lost to ischemia or necrosis
-                  (such as during a myocardial infarction) is replaced by
-                  non-contractile scar tissue
+                  <strong>Important Note:</strong> When studying the cardiac
+                  cycle, exam questions rarely test simple definitions. Instead,
+                  they evaluate your understanding of pressure dynamics, timing,
+                  valve states, and integration with ECG traces.
                 </span>
               </div>
             </article>

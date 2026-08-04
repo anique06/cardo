@@ -395,23 +395,25 @@ function PhysiologyGrid() {
             </div>
 
             <div className="flex justify-end">
-              <a
-                href="#pathophysiology"
+              <Link
+                to="/Physiology/PatoPhy/PatoPhy"
                 className="
-                shadow-white
-          inline-flex
-          items-center
-          gap-2
-          font-semibold
-          text-[#A71627]
-          transition-all
-          duration-300
-          group-hover:gap-3
-        "
+                absolute right-10 bottom-0 
+                p-5
+                    mt-6
+                    inline-flex
+                    items-center
+                    gap-8
+                    font-semibold
+                    text-[#A71627]
+                    transition-all
+                    duration-300
+                    group-hover:gap-3
+                "
               >
                 Explore Pathophysiology
                 <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -492,23 +494,25 @@ function PhysiologyGrid() {
             </div>
 
             <div className="flex justify-end">
-              <a
-                href="#pathophysiology"
+              <Link
+                to="/Physiology/CardioHemo/CardioHemo"
                 className="
-                shadow-white
-          inline-flex
-          items-center
-          gap-2
-          font-semibold
-          text-[#A71627]
-          transition-all
-          duration-300
-          group-hover:gap-3
-        "
+                absolute right-10 bottom-0 
+                p-5
+                    mt-6
+                    inline-flex
+                    items-center
+                    gap-8
+                    font-semibold
+                    text-[#A71627]
+                    transition-all
+                    duration-300
+                    group-hover:gap-3
+                "
               >
                 Explore Cardiovascular Hemodynamic
                 <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
