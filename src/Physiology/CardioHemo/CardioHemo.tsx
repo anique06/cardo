@@ -5,7 +5,6 @@ import {
   ArrowLeft,
   CircleCheck,
   BookOpen,
-  BadgeInfo,
   Stethoscope,
 } from "lucide-react";
 import "katex/dist/katex.min.css";
