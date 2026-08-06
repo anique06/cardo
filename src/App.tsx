@@ -9,6 +9,8 @@ import CardiacCycle from "./Physiology/CardiacCycle/CardiacCycle";
 import MI from "./Case/MI";
 import CardioHemo from "./Physiology/CardioHemo/CardioHemo";
 import PatoPhy from "./Physiology/PatoPhy/PatoPhy";
+import UnderCons from "./UnderCons";
+
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
           path="/Anatomy/AnatomyHeartStructure"
           element={<AnatomyHeartStructure />}
         />
+
+        <Route
+          path="/UnderCons"
+          element={<UnderCons />}
+        />
+
         <Route
           path="/Anatomy/AnatomyHeartLocation"
           element={<AnatomyHeartLocation />}

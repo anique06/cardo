@@ -44,8 +44,8 @@ function Header() {
         className="text-5xl sm:text-6xl lg:text-7xl font-serif font-medium tracking-tight text-slate-900 leading-[1.1]"
         variants={itemVariants}
       >
-        Get to know <br />
-        <span className="italic text-red-700 font-serif">your heart.</span>
+        Welcome to <br />
+        <span className="italic text-red-700 font-serif">Cardo.</span>
       </motion.h1>
 
       {/* Subtitle */}

@@ -109,7 +109,7 @@ function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-10">
-            {["Anatomy", "Physiology", "Game", "Cases"].map((item) => (
+            {["Anatomy", "Physiology", "Quiz", "Cases"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}

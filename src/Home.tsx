@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Header from "./Header/Header";
+import AboutCardo from "./Header/AboutCardo";
 import HeartCanvas from "./HeartCanvas";
 import AnatomyGrid from "./Anatomy/AnatomyGrid";
 import PhysiologyGrid from "./Physiology/PhysiologyGrid";
@@ -11,7 +12,7 @@ import GetStarted from "./GetStarted";
 
 function App(): React.JSX.Element {
   return (
-    <div className="relative min-h-screen  selection:bg-[#A71627]/10 selection:text-[#A71627] overflow-visible bg-[#FDF8F5] font-sans">
+    <div className="relative min-h-screen  selection:bg-[#A71627]/10 selection:text-[#A71627] overflow-hidden bg-[#FDF8F5] font-sans">
       {/* Background Shape */}
 
       {/* Floating Navbar */}
@@ -45,6 +46,13 @@ function App(): React.JSX.Element {
             />
           </div>
         </main>
+
+        {/* Anatomy Section */}
+        <section>
+          <div className="items-center py-5">
+            <AboutCardo />
+          </div>
+        </section>
 
         {/* Anatomy Section */}
         <section>

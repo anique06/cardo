@@ -124,13 +124,27 @@ export default function PatoPhy() {
                 </p>
               </div>
 
-              <Link
-                to="/Case/MI"
-                className="mt-6 inline-flex items-center gap-2 font-semibold text-[#A71627] transition-all duration-300 group-hover:gap-3 self-end whitespace-nowrap"
-              >
-                Read More
-                <ArrowRight size={18} />
-              </Link>
+              <div className="flex justify-end">
+                <Link
+                  to="/UnderCons"
+                  className="
+                              absolute right-10 bottom-0 
+                              p-5
+                                  mt-6
+                                  inline-flex
+                                  items-center
+                                  gap-8
+                                  font-semibold
+                                  text-[#A71627]
+                                  transition-all
+                                  duration-300
+                                  group-hover:gap-3
+                              "
+                >
+                  Read More
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -153,13 +167,27 @@ export default function PatoPhy() {
                 </p>
               </div>
 
-              <Link
-                to="/Case/CAD"
-                className="mt-6 inline-flex items-center gap-2 font-semibold text-[#A71627] transition-all duration-300 group-hover:gap-3 self-end whitespace-nowrap"
-              >
-                Read More
-                <ArrowRight size={18} />
-              </Link>
+              <div className="flex justify-end">
+                <Link
+                  to="/UnderCons"
+                  className="
+                              absolute right-10 bottom-0 
+                              p-5
+                                  mt-6
+                                  inline-flex
+                                  items-center
+                                  gap-8
+                                  font-semibold
+                                  text-[#A71627]
+                                  transition-all
+                                  duration-300
+                                  group-hover:gap-3
+                              "
+                >
+                  Read More
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
             </div>
           </div>
         </section>

@@ -60,25 +60,27 @@ function CaseGrid() {
                 Explore more cases
               </h2>
 
-              <a
-                href="#heart-structure"
-                className="
-                absolute right-10 bottom-0 
-                p-5
-                    mt-6
-                    inline-flex
-                    items-center
-                    gap-8
-                    font-semibold
-                    text-[#A71627]
-                    transition-all
-                    duration-300
-                    group-hover:gap-3
-                "
-              >
-                Click here
-                <ArrowRight size={18} />
-              </a>
+              <div className="flex justify-end">
+                <Link
+                  to="/UnderCons"
+                  className="
+                              absolute right-10 bottom-0 
+                              p-5
+                                  mt-6
+                                  inline-flex
+                                  items-center
+                                  gap-8
+                                  font-semibold
+                                  text-[#A71627]
+                                  transition-all
+                                  duration-300
+                                  group-hover:gap-3
+                              "
+                >
+                  Click Here
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

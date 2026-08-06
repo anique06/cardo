@@ -1,10 +1,10 @@
 import { ArrowRight, HeartPulse, MapPin } from "lucide-react";
-
+import { Link } from "react-router-dom";
 function GameGrid() {
   return (
-    <div className="relative w-full min-h-screen overflow-visible  px-4 max-w-7xl mx-auto">
+    <div className="relative w-full min-h-screen overflow-visible px-4 max-w-7xl mx-auto">
       <div
-        id="game"
+        id="quiz"
         className="flex justify-center lg:justify-start mb-5 mt-20"
       >
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium tracking-tight text-slate-900 leading-[1.1]">
@@ -30,33 +30,35 @@ function GameGrid() {
 
             <div className="flex-1">
               <h2 className="text-2xl font-bold text-slate-800">
-                General Knowledge Game
+                General Knowledge Quiz
               </h2>
 
               <p className="mt-3 text-slate-600 leading-7">
                 Test your knowledge of heart anatomy and physiology with our
-                interactive game!
+                Quiz!
               </p>
 
-              <a
-                href="#heart-structure"
-                className="
-                absolute right-10 bottom-0 
-                p-5
-                    mt-6
-                    inline-flex
-                    items-center
-                    gap-8
-                    font-semibold
-                    text-[#A71627]
-                    transition-all
-                    duration-300
-                    group-hover:gap-3
-                "
-              >
-                Play Game
-                <ArrowRight size={18} />
-              </a>
+              <div className="flex justify-end">
+                <Link
+                  to="/UnderCons"
+                  className="
+                              absolute right-10 bottom-0 
+                              p-5
+                                  mt-6
+                                  inline-flex
+                                  items-center
+                                  gap-8
+                                  font-semibold
+                                  text-[#A71627]
+                                  transition-all
+                                  duration-300
+                                  group-hover:gap-3
+                              "
+                >
+                  Continue
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -77,7 +79,7 @@ function GameGrid() {
 
             <div className="flex-1">
               <h2 className="text-2xl font-bold text-slate-800">
-                Case Study Game
+                Case Study Quiz
               </h2>
 
               <p className="mt-3 text-slate-600 leading-7">
@@ -85,25 +87,27 @@ function GameGrid() {
                 and physiology!
               </p>
 
-              <a
-                href="#heart-structure"
-                className="
-                absolute right-10 bottom-0 
-                p-5
-                    mt-6
-                    inline-flex
-                    items-center
-                    gap-8
-                    font-semibold
-                    text-[#A71627]
-                    transition-all
-                    duration-300
-                    group-hover:gap-3
-                "
-              >
-                Play Case Study
-                <ArrowRight size={18} />
-              </a>
+              <div className="flex justify-end">
+                <Link
+                  to="/UnderCons"
+                  className="
+                              absolute right-10 bottom-0 
+                              p-5
+                                  mt-6
+                                  inline-flex
+                                  items-center
+                                  gap-8
+                                  font-semibold
+                                  text-[#A71627]
+                                  transition-all
+                                  duration-300
+                                  group-hover:gap-3
+                              "
+                >
+                  Continue
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
